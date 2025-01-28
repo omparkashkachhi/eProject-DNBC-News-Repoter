@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dnbcnews.png" type="image/x-icon">
+    <title>DNBC News</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="light-theme.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>DNBC News Network</h1>
+        <p>Your source for the latest news from around the world</p>
+        <div class="search-container"> 
+                    <input type="text" class="search-input" placeholder="Search..."> 
+                    <button class="search-icon" onclick="searchFunction()">&#x1F50E;&#xFE0E;</button>
+                 </div>
+    </header>
+ <nav class=" container-fluid navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger" href="#" ><img src="logo2.png" alt="Bootstrap" width="85" height="55">DNBC News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav aling-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home" onclick="setActiveLink(event)">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"  onclick="setActiveLink(event)">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#world"  onclick="setActiveLink(event)">Today in World</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sports"  onclick="setActiveLink(event)">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#business"  onclick="setActiveLink(event)">Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"  onclick="setActiveLink(event)">Contact Us</a></li>
+                </ul>
+                <div class="navbar-text"> 
+                    <button id="theme-toggle" class="btn btn-outline-light">Light</button> 
+                </div>
+            </div>
+        </div>
+    </nav>
+      
+     
+     <div class="light-theme bg-light text-dark">
+    <!-- Home Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Nations Unies New York world-news.jpg" class="d-block w-100" alt="world-news1">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Summit of the Future</h1>
+            <p> The United Nations is holding a summit to discuss the future of global cooperation and sustainable development.</p> 
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Malaysia airports world-news.jpg" class="d-block w-100" alt="world-news2">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Malaysia Airports’ STOLports</h1>
+            <p>Malaysia's diverse landscapes, Malaysia Airports Holdings Berhad continues to elevate its network of Short Take-Off and Landing (STOL) ports.</p> 
+              </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="wind-solar-mountain world-news.jpg" class="d-block w-100" alt="world-news3">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>An agenda for UK–China climate cooperation</h1>
+            <p>Wind turbines and solar panels at a wind and solar hybrid power generation plant on a mountain in Chongqing, China,</p> 
+              </div> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+     <!--main section-->
+     <main class="light-theme bg-light text-dark">
+    <!-- Today in World Section -->
+    <div id="world" class="container">
+        <h2>Today in World</h2>
+        <p class="text-center">Get the latest updates on what's happening around the world.</p>
+        <!-- Today in World Section -->
+    <div class="row">
+        <!-- Card 1-->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="world-news1.avif" class="card-img-top" alt="World News1">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">2024 was a historic year in global elections — and a bad one for those in power</h5>
+                    <p class="card-text overflow-auto">This was the first year since records began in 1905 that every incumbent party lost vote share in developed countries holding elections, according to data from ParlGov, an independent database run by the University of Bremen in Germany an.</p>
+                    <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="world-news2.avif" class="card-img-top" alt="World News2">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">An exit poll predicting that the Labour Party, led by Keir Starmer, would win 410 seats in Britain's general election was projected onto DNBC Broadcasting House in London on July 4</h5>
+                    <p class="card-text overflow-auto">“I was not surprised by Trump’s win,” he told DNBC News. Around the world, “governments are being overturned on the same issue — the cost of living.”</p>
+                    <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="world-news3.jpg" class="card-img-top" alt="World News3">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">Indian Prime Minister Narendra Modi failed to secure a parliamentary majority in June. </h5>
+                    <p class="card-text overflow-auto">Many people are simply becoming more unhappy, not just with their governments, but also with their own lives. Global well-being has declined for four years straight, according to an annual survey by the India nonprofit organization Six Seconds. It warns of a post-pandemic".
+                    </p>
+                    <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="word-news4.avif" class="card-img-top" alt="World News4">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">Locals celebrate the New Year at Ancol Beach in Jakarta.</h5>
+                    <p class="card-text overflow-auto">Nations in the South Pacific Ocean were the first to wave goodbye to 2024. Midnight in New Zealand is 18 hours ahead of Eastern Time.
+
+                        In some Asian countries, millions readied for the Year of the Snake, seen as the year of rebirth in the Asian zodiac.</p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="world-news5.jpg" class="card-img-top" alt="World News5">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">Petrol price increased by Re0.56 per litre for next fortnight</h5>
+                    <p class="card-text overflow-auto">ISLAMABAD: The federal government has increased the price of petrol by Re0.56 per litre on New Year's Eve, for the first fortnight of 2025.
+                      "The Oil and Gas Regulatory Authority (Ogra) has worked out the consumer prices of petroleum products in view of the fluctuations in the international market in the last fortnight"
+                        </p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+
+                <img src="world-news6.avif" class="card-img-top" alt="World News6">
+                <div class="card-body bg-light text-dark">
+                    <h5 class="card-title">Panda sculptures at the waterfront of Victoria Harbor in Hong Kong.</h5>
+                    <p class="card-text overflow-auto">From January through October of this year, the city received almost 37 million visitors, according to the Hong Kong Tourism Board, an increase of 37% compared with the same period last year. But that is still well below the more than.
+                    </p>
+                    <a href="#" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+
+    <!-- Sports Section -->
+    <div id="sports" class="container">
+        <div class="container mt-5">
+            <h2>Sports News</h2>
+            <p class="text-center">Catch up on the latest sports news and events.</p>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="crick1.png" class="card-img-top" alt="Image 1">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">2019 Cricket World Cup</h5>
+                            <p class="card-text overflow-auto">Jonny Bairstow of England batting during a semifinal match against
+                                Australia at the 2019 Cricket World Cup held in England .</p>
+                                <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="footba1.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">French Ligue 1: Paris Saint Germain vs. Lyon</h5>
+                            <p class="card-text overflow-auto">Neymar (L) of Paris Saint Germain competes with Kenny Tete of Lyon
+                                during their match of French Ligue 1 in Paris, France on Sept 17, 2017. Paris Saint
+                                Germain won 2-0.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="tensb1.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">China-US ping-pong diplomacy commemorated in NY, Chicago</h5>
+                            <p class="card-text overflow-auto"> A friendship match is held at the headquarters of the United Nations
+                                in commemoration of the China-US ping-pong diplomacy, 45 years after the Chinese table
+                                tennis delegation.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="swimg1.jpg" class="card-img-top" alt="Image 4">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Ups and downs: Olympic champions at National Games</h5>
+                            <p class="card-text overflow-auto"> Sun Yang of Zhejiang celebrates after the men's 4×200m freestyle final
+                                at the 13th Chinese National Games in North China's Tianjin Municipality, Sept 3, 2017  
+                            </p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="tenb2.jpg" class="card-img-top" alt="Image 5">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Federer defeats Wawrinka for historic Indian Wells title</h5>
+                            <p class="card-text overflow-auto"> Roger Federer celebrates at match point as he defeated Stan Wawrinka
+                                7-6, 6-4 in the men's final in the BNP Paribas.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="flying1.jpg" class="card-img-top" alt="Image 6">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Wingsuit flying championship kicks off in Hunan</h5>
+                            <p class="card-text overflow-auto">A diver takes part in a test fly ahead of the World Wingsuit
+                                Championship on Tianmen Mountain in Zhangjiajie, Hunan province, Sept 7, 2017. </p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business Section -->
+    <div id="business" class="container">
+        <div id="business" class="container mt-5">
+            <h2>Business News</h2>
+            <p class="text-center">Stay informed about the latest in the business world.</p>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4  mb-4">
+                    <div class="card">
+                        <img src="busin2.jpeg" class="card-img-top" alt="Business News 1">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Most Asian markets cautiously higher as traders eye Trump 2.0</h5>
+                            <p class="card-text overflow-auto">
+                                Most Asian markets were cautiously higher on Monday as traders kept a close eye on
+                                 the potential implications of a second term for former U.S. 
+                                President Donald Trump. Investors are weighing the possible .
+                            </p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="busin3.jpg" class="card-img-top" alt="Business News 2">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Dollar slips 1% after report on potential narrower Trump tariffs</h5>
+                            <p class="card-text overflow-auto">The dollar slipped by 1% after reports surfaced about potential narrower 
+                                tariffs under former President Trump's administration. Investors are closely monitoring the 
+                                situation for further developments.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4  mb-4">
+                    <div class="card">
+                        <img src="busin4.jpg" class="card-img-top" alt="Business News 3">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Tuna fetches over $1.3 million at Japan New Year’s auction</h5>
+                            <p class="card-text overflow-auto">A bluefin tuna fetched over $1.3 million at the first auction of 
+                                the year at Tokyo's Toyosu fish market. The winning bid was placed by a Japanese sushi 
+                                restaurant chain, marking a strong start to the New Year for the market.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="busin5.jpg" class="card-img-top" alt="Business News 4">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title overflow-auto">Foxconn beats estimates with record fourth-quarter revenue on AI demand</h5>
+                            <p class="card-text">Foxconn has reported record fourth-quarter revenue, driven by strong demand for
+                                 AI-related products. The company's performance exceeded market expectations, highlighting its pivotal.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="busin6.jpg" class="card-img-top" alt="Business News 5">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Elon Musk confirms Starlink’s launch plans for Pakistan</h5>
+                            <p class="card-text overflow-auto">Elon Musk has confirmed that Starlink, SpaceX's satellite internet service,
+                                 will be launching in Pakistan soon. This move is expected to significantly improve internet 
+                                 connectivity in the region.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="busin7.jpg" class="card-img-top" alt="Business News 6">
+                        <div class="card-body bg-light text-dark">
+                            <h5 class="card-title">Space industry funding in India falls 55% in 2024, data show</h5>
+                            <p class="card-text overflow-auto">Funding for the space industry in India has fallen by 55% in 2024,
+                                 according to recent data. This decline is attributed to various economic challenges 
+                                 and shifting priorities within the sector.</p>
+                            <a href="#" class="btn btn-outline-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Address: DNBC Main Office, London</p>
+        <iframe
+                class="responsive-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9800672938!2d-0.3817847632790539!3d51.52855824163279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb7c9d42f11%3A0x275f36f6c9f1a22c!2sLondon!5e0!3m2!1sen!2suk!4v1697385239980!5m2!1sen!2suk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="submit_form.php" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Submit</button>
+        </form>
+    </div>
+
+ </main>
+
+    <!-- Footer ====Start -->
+        <footer class="bg-light pt-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-12 col-lg-2 mb-4 text-center text-lg-start">
+                        <img src="logo2.png" class="text-decoration-none fw-bold fs-4" style="width:90px;" height="55px">
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="col-12 col-lg-8 mb-4">
+                        <div class="row text-center text-lg-start">
+                            <div class="col-12 col-lg-2 mb-2">
+                                <a href="#" class="text-decoration-none text-dark d-block">Latest News</a>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-2">
+                                <a href="#" class="text-decoration-none text-dark d-block">Global Updates</a>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-2">
+                                <a href="#" class="text-decoration-none text-dark d-block">Sports Highlights</a>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-2">
+                                <a href="#" class="text-decoration-none text-dark d-block">Business Insights</a>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-2">
+                                <a href="#" class="text-decoration-none text-dark d-block">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Media Icons -->
+                    <div class="col-12 col-lg-2 mb-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-center justify-content-lg-end">
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-x"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-2 text-center text-lg-start">
+                        <!-- Copyright -->
+                        <p class="mb-0 text-muted">© 2025 DNBC News Network. All rights reserved.</p>
+                     </div>
+                        <button id="about" type="button" class="btn btn-outline-dark light-theme" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            About Us
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog ">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title light-theme" id="exampleModalLabel">About of DNBC</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body light-theme">
+                                    DNBC is an established name in News and Reporting, committed to delivering accurate and timely news to our audience. Our team of experienced journalists and reporters work around the clock to bring you the latest updates from around the globe.
+                                    Founded in 2000, DNBC News has grown to become one of the most trusted news sources, known for our in-depth analysis, investigative journalism, and comprehensive coverage of major events. We cover a wide range of topics including politics, business, technology, sports, entertainment, and more.
+                                    Our mission is to keep you informed and engaged with the world around you. We believe in the power of journalism to make a difference and strive to uphold the highest standards of integrity and professionalism in our reporting.
+                                    Thank you for choosing DNBC News as your source for reliable news and information.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                
+                    <div class="col-12 col-lg-6 mb-2 text-center text-lg-end"> 
+                        <!-- Privacy and Terms Links -->
+                        <ul class="list-unstyled d-flex justify-content-center justify-content-lg-end mb-0">
+                            <li><a href="#" class="text-decoration-none mx-2 text-dark">Privacy Policy</a></li>
+                            <li><a href="#" class="text-decoration-none mx-2 text-dark">Terms of Use</a></li>
+                            <li><a href="#" class="text-decoration-none mx-2 text-dark">Cookie Preferences</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+<!-- =======================
+Footer END -->
+    <div class="ads">
+        <p>Breaking News: Stay updated with DNBC!</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  Dnbc news JavaScript function -->
+      <script src="dnbc-news-function.js"></script>
+
+    <!--Google Maps API-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+
+</html>
